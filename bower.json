@@ -1,0 +1,11 @@
+{
+  "name": "dephytech",
+  "version": "0.1.0",
+  "dependencies": {
+  	"foundation": "zurb/bower-foundation"
+  },
+  "devDependencies": {
+    "holderjs": "~2.4.0"
+  }
+}
+
