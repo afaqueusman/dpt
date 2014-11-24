@@ -69,16 +69,16 @@ module.exports = function(grunt) {
 			},
 		},
 
-		//imagemin: {
-		//	target: {
-		//		files: [{
-		//			expand: true,
-		//			cwd: '<%= app %>/images/',
-		//			src: ['**/*.{jpg,gif,svg,jpeg,png}'],
-		//			dest: '<%= dist %>/images/'
-		//		}]
-		//	}
-		//},
+		imagemin: {
+			target: {
+				files: [{
+					expand: true,
+					cwd: '<%= app %>/images/',
+					src: ['**/*.{jpg,gif,svg,jpeg,png}'],
+					dest: '<%= dist %>/images/'
+				}]
+			}
+		},
 
 		uglify: {
 			options: {

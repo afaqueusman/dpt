@@ -1,5 +1,5 @@
-- var site_url = 'https://s3.amazonaws.com/creative_loupe/website/demos/wireframing'
-- var site_name = 'Jonquil Group'
+- var site_url = 'http://dephytech.com'
+- var site_name = 'DePhy tech'
 - var layout = ''
 - var section = ''
 - var sidebar_content = ''
@@ -26,6 +26,8 @@ html.no-js(lang='en')
   body.antialiased.hide-extras
     .marketing.off-canvas-wrap(data-offcanvas)
       .inner-wrap
+        .progress.fixed
+            span.meter
         include topbar
         block index
         include footer
@@ -45,7 +47,7 @@ html.no-js(lang='en')
     // script(src="bower_components/foundation/js/foundation/foundation.interchange.js")
     // script(src="bower_components/foundation/js/foundation/foundation.joyride.js")
     // script(src="bower_components/foundation/js/foundation/foundation.magellan.js")
-    script(src="bower_components/foundation/js/foundation/foundation.offcanvas.js")
+    // script(src="bower_components/foundation/js/foundation/foundation.offcanvas.js")
     script(src="bower_components/foundation/js/foundation/foundation.orbit.js")
     // script(src="bower_components/foundation/js/foundation/foundation.reveal.js")
     script(src="bower_components/foundation/js/foundation/foundation.slider.js")
@@ -56,3 +58,5 @@ html.no-js(lang='en')
     // build:js js/app.min.js
     script(src="js/app.js")
     // endbuild
+    script(src="js/init.js")
+    script(src="js/jquery.mmenu.min.js")

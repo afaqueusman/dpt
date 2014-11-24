@@ -23,3 +23,16 @@ var app = (function(document, $) {
 	app.init();
 
 })();
+
+//	The menu
+	$('#right-offcanvas-menu')
+		.mmenu({
+			classes			: 'mm-white',
+			searchfield		: true,
+			counters		: true,
+			header			: {
+				add		: true,
+				update	: true,
+				title	: 'mmenu'
+			}
+		});

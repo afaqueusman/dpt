@@ -1,1 +1,395 @@
-/* all app scss styles here */
+@charset "utf-8";
+/* CSS Document */
+
+// Variables
+
+$titlebar-height: rem-calc(30);
+$titlebar-bg: hsl(100,40,20);
+$fine-print: rem-calc(14);
+
+// body {
+//     background-image: url(../img/background.png);
+// }
+
+// _title-bar (created by afaque)
+
+.title-bar {
+    height: $titlebar-height;
+    line-height: $titlebar-height;
+    background: $titlebar-bg;
+
+    ul {
+      height: auto;
+      display: block;
+      background: $titlebar-bg;
+      font-size: $rem-base;
+      margin: 0;
+    }
+
+    .name {
+      height: $titlebar-height;
+      margin: 0;
+      font-size: $rem-base;
+    }
+
+    a {
+        color: $topbar-link-color;
+        text-transform: $topbar-menu-link-transform;
+        font-size: $topbar-menu-link-font-size;
+        font-weight: $topbar-menu-link-weight;
+        position: relative;
+        display: block;
+        padding: 0 $titlebar-height / 3;
+        height: $titlebar-height;
+        line-height: $titlebar-height;
+    }
+
+    ul li {
+      & > a {
+        display: block;
+        width: 100%;
+        color: $topbar-link-color;
+        padding: 0;
+        padding-#{$default-float}: $titlebar-height / 3;
+        font-size: $topbar-link-font-size;
+        font-weight: $topbar-link-weight;
+        background: $titlebar-bg;
+    	}
+    }
+}
+
+.background1 {
+    background: green;
+}
+
+.background2 {
+    background: pink;
+}
+
+.background3 {
+    background: #069FC5;
+    .large-8 {
+        background: $white;
+        box-shadow: rem-calc(0 1 30 0) rgba(0,0,0,0.4);
+        text-align: center;
+        margin: rem-calc(100 0);
+        padding: rem-calc(50 100);
+    }
+}
+
+.background4 {
+    background: white;
+}
+
+
+// Miscellaneous overrides
+footer
+ {
+    background: -webkit-linear-gradient(#330000, #00cccc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#330000,#00cccc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#330000,#00cccc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#330000, #00cccc); /* Standard syntax (must be last) */
+
+
+ 	padding: 0em 0 0em;
+	color: #0F0F0F;
+	//background: hsl(100,40,20);
+   //height:130px;
+
+}
+
+a.footer-img
+{
+    padding:0px 0px;
+}
+
+
+a.footer-links:active {color:#0F0F0F;}
+a.footer-links:link {color:#0F0F0F;}
+a.footer-links:visited {color:#0F0F0F;}
+a.footer-links:hover {color:#525252;}
+
+.involve {
+    background : $charcoal;
+}
+
+
+
+.copyrights {
+    background : $oil;
+    color : white;
+    h6 {
+        font-size: $fine-print;
+        padding: rem-calc(30 0);
+        margin: rem-calc(0);
+    }
+}
+
+//.columns {border: 1px solid red;}
+
+//For contact.html
+#map-canvas{
+    height: 450px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+.orbit-container{
+    .orbit-slides-container{
+        img{
+            display: inline-block;
+        }
+    }
+} 
+
+.banner{
+    text-align: center;
+}
+
+.jq_button { 
+    @include button(rem-calc(5), darken($primary-color, 5%), true, false, false, false);
+    border: 1.5px solid lighten($primary-color, 10%);
+    font-size: rem-calc(12);
+    }
+
+.panel_button { 
+    @include button(rem-calc(5), darken($primary-color, 5%), true, true, false, false);
+    border: 1.5px solid lighten($primary-color, 10%);
+    font-size: rem-calc(12);
+    }
+
+.accordion  {
+    .accordion-navigation  {
+    border: 1.5px solid darken($primary-color, 5%);
+  }
+}
+
+
+
+// --------------------------------------------------------------------------------------------------------------
+
+
+$primary-color: #ef4523;
+
+/*
+   HEADER SECTION
+   ========================================================================== */
+.header-section {
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 98;
+    min-width: 100%;
+}
+
+.contain-to-grid {
+    background-color: rgba(255, 255, 255, 0.97);
+}
+
+// FILL USED FOR HEADER
+.header-fill {
+    background: #fff;
+    height: 120px;
+    .tablet-mobile-logo img {
+        padding-top: 30px;
+    }
+}
+
+.full-width {
+    min-width: 100%;
+}
+
+p {
+    line-height: 3rem;
+    padding-bottom: 30px;
+}
+
+
+/*
+   TOPBAR NAVGATION
+   ========================================================================== */
+.top-bar
+{
+    background: none;
+    padding: 50px 0.9375rem 70px 0.9375rem;
+    transition: all 0.5s ease 0.1s;
+    // LOGO ADJUSTMENT
+    ul.title-area img {
+        margin: -36px 0 0 0;
+    }
+    .top-bar-section ul {
+        background: none;
+        // MENU ITEM STYLES
+        li a:not(.button), li.active a:not(.button) {
+            background: none;
+            line-height: 30px;
+            font-size: 12px;
+            padding: 0;
+            margin: 5px 0 0 0;
+            text-transform: uppercase;
+        }
+        // MENU ITEM HOVERS
+        li a:not(.button):hover {
+            background: none;
+            border-bottom: 2px solid $primary-color;
+            color: #222;
+        }
+        // MENU ITEM ACTIVE
+        li.active a:not(.button) {
+            border-bottom: 2px solid $primary-color;
+            color: #222;
+            &:hover {
+                background: none;
+            }
+        }
+        li {
+            margin-left: 30px;
+            a {
+                color: #888;
+            }
+        }
+    }
+    // DROPDOWN MENU
+    .top-bar-section ul li:hover:not(.has-form) > a {
+        color: #333;
+    }
+    .top-bar-section li ul.dropdown {
+        background: #fff;
+        border: 1px solid #ddd;
+        color: #888;
+        li {
+            border-bottom: 1px solid #ddd;
+            margin: 0;
+            padding: 5px 15px 5px 15px;
+        }
+    }
+    .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar-section li ul.dropdown li a:not(.button) {
+        background: none;
+        color: #222;
+        border-bottom: none;
+        padding: 20px -4px 40px 45px;
+    }
+    .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
+        background: none;
+        color: #222;
+    }
+    // DROPDOWN ARROW
+    .has-dropdown > a:after {
+        border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+        margin-top: -5px;
+    }
+}
+
+
+/*
+   CONTENT SECTION
+   ========================================================================== */
+
+.content-section {
+    .main-content {
+        margin-top: 0px;
+    }
+}
+
+
+/*
+   FOOTER SECTION
+   ========================================================================== */
+
+.footer-section {
+    background: #333;
+    min-height: 100px;
+    p {
+        color: #fff;
+        margin-top: 50px;
+    }
+}
+
+// USED FOR JQUERY ACTION
+.padding-on-my-header {
+    padding: 20px 0.9375rem 60px 0.9375rem;
+    ul.title-area img {
+        margin: -12px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .top-bar {
+        margin-top: 0;
+        padding: 0;
+        float: none;
+        // MENU BUTTON AND HAMBURGER ICON
+        .toggle-topbar.menu-icon a {
+            color: #222;
+            &:after {
+                box-shadow: 0 10px 0 1px #222, 0 16px 0 1px #222, 0 22px 0 1px #222;
+            }
+        }
+        // LOGO
+        ul.title-area img {
+            margin: -2px 0 0;
+            width: 145px;
+        }
+        .top-bar-section {
+            ul {
+                background: #333;
+                li {
+                    margin-left: 0;
+                }
+                li > a {
+                    background: $primary-color;
+                    border-radius: 0;
+                    font-size: 0.9rem;
+                }
+                // NORMAL BUTTONS
+                li:not(.has-form) a:not(.button) {
+                    background: none;
+                    color: #fff;
+                    padding: 10px 15px;
+                    margin-top: 0;
+                    &:hover {
+                        background: $primary-color;
+                        color: #fff;
+                        margin-top: 0;
+                    }
+                }
+                // ACTIVE BUTTON
+                li.active:not(.has-form) a:not(.button) {
+                    background: $primary-color;
+                    color: #fff;
+                    padding: 10px 15px;
+                    margin-top: 0;
+                    &:hover {
+                        background: lighten($primary-color, 5%);
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    // SMALLER IMAGE
+    .top-bar.padding-on-my-header ul.title-area img {
+        margin: 5px 13px 0;
+        width: 35px;
+    }
+    // EXPANDED TOPBAR MENU
+    .top-bar.expanded {
+        margin-top: 0;
+        padding: 0;
+        float: none;
+        .toggle-topbar.menu-icon a {
+            color: #fff;
+            &:after {
+                box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+            }
+        }
+    }
+
+    // SMALLER HEADER
+    .header-fill {
+        height: 10px;
+        background: #000;
+    }
+}
