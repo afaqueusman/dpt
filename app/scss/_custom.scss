@@ -7,9 +7,9 @@ $titlebar-height: rem-calc(30);
 $titlebar-bg: hsl(100,40,20);
 $fine-print: rem-calc(14);
 
-// body {
-//     background-image: url(../img/background.png);
-// }
+/*body {
+     background-image: url(../img/background.png);
+ }*/
 
 // _title-bar (created by afaque)
 
@@ -68,13 +68,6 @@ $fine-print: rem-calc(14);
 
 .background3 {
     background: #069FC5;
-    .large-8 {
-        background: $white;
-        box-shadow: rem-calc(0 1 30 0) rgba(0,0,0,0.4);
-        text-align: center;
-        margin: rem-calc(100 0);
-        padding: rem-calc(50 100);
-    }
 }
 
 .background4 {
@@ -82,7 +75,8 @@ $fine-print: rem-calc(14);
 }
 
 
-// Footer overrides
+/*              FOOTER OVERRIDES
+   ========================================================================== */
 
 .involve {
     background : $charcoal;
@@ -92,12 +86,6 @@ $fine-print: rem-calc(14);
 
 footer
  {
-    /*background: -webkit-linear-gradient(#330000, #00cccc); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#330000,#00cccc); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#330000,#00cccc); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#330000, #00cccc); /* Standard syntax (must be last) */
-
-*/
  	padding: 0em 0 0em;
 	color: #0F0F0F;
 
@@ -125,6 +113,8 @@ a.footer-links:hover {color:#525252;}
     }
 }
 
+/*       FOOTER OVERRIDES END HERE
+   ========================================================================== */
 
 
 
@@ -142,24 +132,6 @@ a.footer-links:hover {color:#525252;}
     margin: 0px;
     padding: 0px
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .orbit-container{
@@ -196,14 +168,13 @@ a.footer-links:hover {color:#525252;}
 
 // --------------------------------------------------------------------------------------------------------------
 
-/*
-   HEADER SECTION
+/*   HEADER SECTION
    ========================================================================== */
 .header-section {
     -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
     position: fixed;
-    z-index: 98;
+    z-index: 120;
     min-width: 100%;
 }
 
@@ -214,7 +185,7 @@ a.footer-links:hover {color:#525252;}
 // FILL USED FOR HEADER
 .header-fill {
     background: #fff;
-    height: 120px;
+    height: 100px;
     .tablet-mobile-logo img {
         padding-top: 30px;
     }
@@ -230,8 +201,7 @@ p {
 }
 
 
-/*
-   TOPBAR NAVGATION
+/*   TOPBAR NAVGATION
    ========================================================================== */
 .top-bar
 {

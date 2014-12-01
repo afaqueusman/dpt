@@ -5879,6 +5879,9 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 /* CSS Document */
+/*body {
+     background-image: url(../img/background.png);
+ }*/
 .title-bar {
   height: 1.875rem;
   line-height: 1.875rem;
@@ -5921,25 +5924,17 @@ th.hide-for-touch {
 
 .background3 {
   background: #069FC5; }
-  .background3 .large-8 {
-    background: #FFFFFF;
-    box-shadow: 0 0.0625rem 1.875rem 0 rgba(0, 0, 0, 0.4);
-    text-align: center;
-    margin: 6.25rem 0;
-    padding: 3.125rem 6.25rem; }
 
 .background4 {
   background: white; }
 
+/*              FOOTER OVERRIDES
+   ========================================================================== */
+.involve {
+  background: #555555;
+  padding: 3.125rem; }
+
 footer {
-  background: -webkit-linear-gradient(#330000, #00cccc);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#330000, #00cccc);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#330000, #00cccc);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#330000, #00cccc);
-  /* Standard syntax (must be last) */
   padding: 0em 0 0em;
   color: #0F0F0F; }
 
@@ -5958,17 +5953,16 @@ a.footer-links:visited {
 a.footer-links:hover {
   color: #525252; }
 
-.involve {
-  background: #555555; }
-
 .copyrights {
   background: #333333;
-  color: white; }
+  color: #FFFFFF; }
   .copyrights h6 {
     font-size: 0.875rem;
     padding: 1.875rem 0;
     margin: 0; }
 
+/*       FOOTER OVERRIDES END HERE
+   ========================================================================== */
 #map-canvas {
   height: 450px;
   width: 100%;
@@ -6049,14 +6043,13 @@ a.footer-links:hover {
 .accordion .accordion-navigation {
   border: 1.5px solid #007ba1; }
 
-/*
-   HEADER SECTION
+/*   HEADER SECTION
    ========================================================================== */
 .header-section {
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
   position: fixed;
-  z-index: 98;
+  z-index: 120;
   min-width: 100%; }
 
 .contain-to-grid {
@@ -6064,7 +6057,7 @@ a.footer-links:hover {
 
 .header-fill {
   background: #fff;
-  height: 120px; }
+  height: 100px; }
   .header-fill .tablet-mobile-logo img {
     padding-top: 30px; }
 
@@ -6075,8 +6068,7 @@ p {
   line-height: 3rem;
   padding-bottom: 30px; }
 
-/*
-   TOPBAR NAVGATION
+/*   TOPBAR NAVGATION
    ========================================================================== */
 .top-bar {
   background: none;
@@ -6095,10 +6087,10 @@ p {
       text-transform: uppercase; }
     .top-bar .top-bar-section ul li a:not(.button):hover {
       background: none;
-      border-bottom: 2px solid #ef4523;
+      border-bottom: 2px solid #008CBA;
       color: #222; }
     .top-bar .top-bar-section ul li.active a:not(.button) {
-      border-bottom: 2px solid #ef4523;
+      border-bottom: 2px solid #008CBA;
       color: #222; }
       .top-bar .top-bar-section ul li.active a:not(.button):hover {
         background: none; }
@@ -6166,7 +6158,7 @@ p {
       .top-bar .top-bar-section ul li {
         margin-left: 0; }
       .top-bar .top-bar-section ul li > a {
-        background: #ef4523;
+        background: #008CBA;
         border-radius: 0;
         font-size: 0.9rem; }
       .top-bar .top-bar-section ul li:not(.has-form) a:not(.button) {
@@ -6175,16 +6167,16 @@ p {
         padding: 10px 15px;
         margin-top: 0; }
         .top-bar .top-bar-section ul li:not(.has-form) a:not(.button):hover {
-          background: #ef4523;
+          background: #008CBA;
           color: #fff;
           margin-top: 0; }
       .top-bar .top-bar-section ul li.active:not(.has-form) a:not(.button) {
-        background: #ef4523;
+        background: #008CBA;
         color: #fff;
         padding: 10px 15px;
         margin-top: 0; }
         .top-bar .top-bar-section ul li.active:not(.has-form) a:not(.button):hover {
-          background: #f1563b;
+          background: #00a2d3;
           margin-top: 0; }
   .top-bar.padding-on-my-header ul.title-area img {
     margin: 5px 13px 0;
