@@ -303,8 +303,7 @@ p {
     }
 }
 
-@media only screen{
-
+@media only screen and (max-width: 1024px){
     .top-bar {
         margin-top: 0;
         padding: 0;

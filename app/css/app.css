@@ -14019,7 +14019,7 @@ p {
   .padding-on-my-header ul.title-area img {
     margin: -12px 0 0 0; }
 
-@media only screen {
+@media only screen and (max-width: 1024px) {
   .top-bar {
     margin-top: 0;
     padding: 0;
