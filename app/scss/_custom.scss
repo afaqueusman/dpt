@@ -68,6 +68,26 @@ $fine-print: rem-calc(14);
 
 .background3 {
     background: #069FC5;
+    padding: rem-calc(100 20);
+    div{
+        .panel{
+            margin-bottom: rem-calc(0);
+            background: $white;
+            box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
+            padding: rem-calc(100 50); 
+            p{ 
+                padding: rem-calc(0 70);
+                
+            }
+        }
+    }
+    /*.small-12{
+        .panel{
+            p{
+                padding: rem-calc(0 30);
+            }
+        }
+    }*/
 }
 
 .background4 {
@@ -174,7 +194,7 @@ a.footer-links:hover {color:#525252;}
     -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
     position: fixed;
-    z-index: 120;
+    z-index: 98;
     min-width: 100%;
 }
 
@@ -275,31 +295,6 @@ p {
     }
 }
 
-
-/*
-   CONTENT SECTION
-   ========================================================================== */
-
-.content-section {
-    .main-content {
-        margin-top: 0px;
-    }
-}
-
-
-/*
-   FOOTER SECTION
-   ========================================================================== */
-
-.footer-section {
-    background: #333;
-    min-height: 100px;
-    p {
-        color: #fff;
-        margin-top: 50px;
-    }
-}
-
 // USED FOR JQUERY ACTION
 .padding-on-my-header {
     padding: 20px 0.9375rem 60px 0.9375rem;
@@ -308,7 +303,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen{
 
     .top-bar {
         margin-top: 0;
