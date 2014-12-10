@@ -99,7 +99,8 @@ $fine-print: rem-calc(14);
    ========================================================================== */
 
 .involve {
-    background : $charcoal;
+    height : rem-calc(380);
+    background : $charcoal url('../img/footer-background-1.png') no-repeat center;
     padding : rem-calc(50);
     }
 
