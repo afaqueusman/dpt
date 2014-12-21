@@ -24,15 +24,15 @@ var app = (function(document, $) {
 
 })();
 
-//	The menu
-	$('#right-offcanvas-menu')
-		.mmenu({
-			classes			: 'mm-white',
-			searchfield		: true,
-			counters		: true,
-			header			: {
-				add		: true,
-				update	: true,
-				title	: 'mmenu'
-			}
-		});
+// //	The menu
+// 	$('#right-offcanvas-menu')
+// 		.mmenu({
+// 			classes			: 'mm-white',
+// 			searchfield		: true,
+// 			counters		: true,
+// 			header			: {
+// 				add		: true,
+// 				update	: true,
+// 				title	: 'mmenu'
+// 			}
+// 		});

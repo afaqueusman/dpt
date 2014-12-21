@@ -4,13 +4,11 @@
     ul.title-area
       li.name
         a(href='index.html')
-          img#logo-image(alt='DePhy tech', src='img/dephylogo.svg')
+          img#logo-image(alt='DePhy tech', src='img/logo-1.png')
     div.top-bar-section
       ul.right
-        li.divider
         li(class=(slug === 'home') ? 'active' : '')
           a(href='index.html') Home
-        li.divider
         li.has-dropdown
           a(href='#') About Us
           ul.dropdown
@@ -18,7 +16,6 @@
               a(href='philosophy.html') Our Philosophy
             li
               a(href='message.html') Our Message
-        li.divider
         li.has-dropdown
           a(href='#') Activities
           ul.dropdown
@@ -28,13 +25,10 @@
               a(href='trading.html') Trading Services
             li
               a(href='interior.html') Interior Designing
-        li.divider
         li(class=(slug === 'partners') ? 'active' : '')
           a(href='partner.html') Partners
-        li.divider
         li
           a(href='contact.php') Contact Us
-        li.divider
   //- Offcanvas 
   section.tab-bar.hide-for-large-up.fixed
     section.left.tab-bar-section

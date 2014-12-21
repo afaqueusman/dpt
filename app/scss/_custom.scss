@@ -125,18 +125,24 @@ $fine-print: rem-calc(14);
     height : rem-calc(350);
     background : #F4AC42 url('../img/footer-background-1.png') no-repeat center;
     padding : rem-calc(50);
+    z-index: inherit;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.5);
     }
 
+.inner-wrap{
+    z-index: 20;
+}
+
 .clearfooter{
-    height : rem-calc(309);
+    margin-bottom: rem-calc(309);
 }
 
 
 /*              FOOTER OVERRIDES
    ========================================================================== */
 
-footer
-{
+footer{
+    margin-top: rem-calc(309);
  	color: #fff;
     display: block;
 	background: #517398;
@@ -156,8 +162,18 @@ footer
             padding: rem-calc(30 0);
             margin: rem-calc(0);
         }
+    }
 
-    .fixed {
+}
+
+.progress{
+    .bottom{
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 99;
     }
 }
 
@@ -173,9 +189,7 @@ a.footer-links:visited {color:#0F0F0F;}
 a.footer-links:hover {color:#525252;}
 
 
-    
 
-}
 
 
 
@@ -237,8 +251,8 @@ a.footer-links:hover {color:#525252;}
 /*   HEADER SECTION
    ========================================================================== */
 .header-section {
-    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
     position: fixed;
     z-index: 98;
     min-width: 100%;
@@ -272,7 +286,7 @@ p {
 .top-bar
 {
     background: none;
-    padding: 50px 0.9375rem 70px 0.9375rem;
+    padding: 42px 0.9375rem 58px 0.9375rem;
     transition: all 0.5s ease 0.1s;
     // LOGO ADJUSTMENT
     ul.title-area img {
@@ -343,9 +357,9 @@ p {
 
 // USED FOR JQUERY ACTION
 .padding-on-my-header {
-    padding: 20px 0.9375rem 60px 0.9375rem;
+    padding: 5px 0.9375rem 30px 0.9375rem;
     ul.title-area img {
-        margin: -12px 0 0 0;
+        margin: 0 0 0 0;
     }
 }
 
