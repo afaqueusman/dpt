@@ -134,7 +134,7 @@ $fine-print: rem-calc(14);
 }
 
 .clearfooter{
-    margin-bottom: rem-calc(309);
+    margin-bottom: rem-calc(320);
 }
 
 
@@ -142,25 +142,27 @@ $fine-print: rem-calc(14);
    ========================================================================== */
 
 footer{
-    margin-top: rem-calc(309);
  	color: #fff;
     display: block;
-	background: #517398;
+	background: #0e6e8c;
     position: fixed;
     text-align: center;
     bottom: 0px;
     left: 0px;
     right: 0px;
     z-index: -5;
+    padding-top: rem-calc(15);
+
+    .row{
+        padding: rem-calc(20 0 15);
+    }
 
 
     .copyrights {
-        background : #262c3a;
+        background : #063e53;
         color : $white;
         h6 {
             font-size: $fine-print;
-            padding: rem-calc(30 0);
-            margin: rem-calc(0);
         }
     }
 
@@ -203,7 +205,7 @@ a.footer-links:hover {color:#525252;}
 
 
 
-// .columns {border: 1px solid red;}
+//.columns {border: 1px solid red;}
 
 //For contact.html
 #map-canvas{
