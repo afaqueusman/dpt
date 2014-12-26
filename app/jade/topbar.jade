@@ -1,10 +1,13 @@
 //- Top Bar 
 .contain-to-grid.header-section
-  nav.contain-to-grid.top-bar.docs-bar.show-for-large-up.important-class(data-topbar, data-options)
+  nav.contain-to-grid.top-bar.important-class(data-topbar, role='navigation', data-options)
     ul.title-area
       li.name
         a(href='index.html')
           img#logo-image(alt='DePhy tech', src='img/logo-1.png')
+      li.toggle-topbar.menu-icon
+        a
+          span
     div.top-bar-section
       ul.right
         li(class=(slug === 'home') ? 'active' : '')
@@ -29,45 +32,4 @@
           a(href='partner.html') Partners
         li
           a(href='contact.php') Contact Us
-  //- Offcanvas 
-  section.tab-bar.hide-for-large-up.fixed
-    section.left.tab-bar-section
-      ul.title-area
-        li.name
-          a.main-logo(href='index.html')
-            img(alt='DePhy tech', src='img/logo-2.png')
-    section.right-small
-      a.right-off-canvas-toggle.menu-icon
-        span
-section.right-off-canvas-menu
-  ul.off-canvas-list
-    li
-      label 
-        strong DePhy tech
-      hr
-    li
-      a(href='index.html') Home
-      hr
-    li
-      label About Us
-    li
-      a(href='philosophy.html') Our Philosophy
-    li
-      a(href='message.html') Our Message
-      hr
-    li
-      label Activities
-    li
-      a(href='construction.html') Construction Services
-    li
-      a(href='trading.html') Trading Services
-    li
-      a(href='interior.html') Interior Designing
-      hr
-    li
-      a(href='partner.html') Partners
-      hr
-    li
-      a(href='contact.html') Contact Us
-a.exit-off-canvas
 .header-fill

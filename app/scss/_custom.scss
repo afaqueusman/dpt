@@ -154,7 +154,12 @@ footer{
     padding-top: rem-calc(15);
 
     .row{
-        padding: rem-calc(20 0 15);
+        padding: rem-calc(25 0 15);
+        ul{
+            list-style-type: none;
+            padding: rem-calc(0);
+            margin: rem-calc(0);
+        }
     }
 
 
@@ -260,10 +265,6 @@ a.footer-links:hover {color:#525252;}
     min-width: 100%;
 }
 
-.contain-to-grid {
-    background-color: rgba(255, 255, 255, 0.97);
-}
-
 // FILL USED FOR HEADER
 .header-fill {
     background: #fff;
@@ -277,12 +278,6 @@ a.footer-links:hover {color:#525252;}
     min-width: 100%;
 }
 
-p {
-    line-height: 3rem;
-    padding-bottom: 30px;
-}
-
-
 /*   TOPBAR NAVGATION
    ========================================================================== */
 .top-bar
@@ -294,13 +289,20 @@ p {
     ul.title-area img {
         margin: -36px 0 0 0;
     }
+
+    &.expanded {
+        height: auto;
+        background: transparent;
+
+        .title-area { background: none; }
+    }
+
     .top-bar-section ul {
         background: none;
         // MENU ITEM STYLES
         li a:not(.button), li.active a:not(.button) {
             background: none;
             line-height: 30px;
-            font-size: 12px;
             padding: 0;
             margin: 5px 0 0 0;
             text-transform: uppercase;
@@ -331,9 +333,14 @@ p {
         color: #333;
     }
     .top-bar-section li ul.dropdown {
-        background: #fff;
+        background: $topbar-bg-color;
         border: 1px solid #ddd;
         color: #888;
+
+        .expanded {
+            background: none;
+        }
+
         li {
             border-bottom: 1px solid #ddd;
             margin: 0;
@@ -365,84 +372,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 1024px){
-    .top-bar {
-        margin-top: 0;
-        padding: 0;
-        float: none;
-        // MENU BUTTON AND HAMBURGER ICON
-        .toggle-topbar.menu-icon a {
-            color: #222;
-            &:after {
-                box-shadow: 0 10px 0 1px #222, 0 16px 0 1px #222, 0 22px 0 1px #222;
-            }
-        }
-        // LOGO
-        ul.title-area img {
-            margin: -2px 0 0;
-            width: 145px;
-        }
-        .top-bar-section {
-            ul {
-                background: #333;
-                li {
-                    margin-left: 0;
-                }
-                li > a {
-                    background: $primary-color;
-                    border-radius: 0;
-                    font-size: 0.9rem;
-                }
-                // NORMAL BUTTONS
-                li:not(.has-form) a:not(.button) {
-                    background: none;
-                    color: #fff;
-                    padding: 10px 15px;
-                    margin-top: 0;
-                    &:hover {
-                        background: $primary-color;
-                        color: #fff;
-                        margin-top: 0;
-                    }
-                }
-                // ACTIVE BUTTON
-                li.active:not(.has-form) a:not(.button) {
-                    background: $primary-color;
-                    color: #fff;
-                    padding: 10px 15px;
-                    margin-top: 0;
-                    &:hover {
-                        background: lighten($primary-color, 5%);
-                        margin-top: 0;
-                    }
-                }
-            }
-        }
-    }
-    // SMALLER IMAGE
-    .top-bar.padding-on-my-header ul.title-area img {
-        margin: 5px 13px 0;
-        width: 35px;
-    }
-    // EXPANDED TOPBAR MENU
-    .top-bar.expanded {
-        margin-top: 0;
-        padding: 0;
-        float: none;
-        .toggle-topbar.menu-icon a {
-            color: #fff;
-            &:after {
-                box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
-            }
-        }
-    }
 
-    // SMALLER HEADER
-    .header-fill {
-        height: 10px;
-        background: #000;
-    }
-}
 
 
 
