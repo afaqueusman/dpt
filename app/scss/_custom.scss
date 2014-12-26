@@ -3,13 +3,10 @@
 
 // Variables
 
-$titlebar-height: rem-calc(30);
+$titlebar-height: rem-calc(42);
 $titlebar-bg: hsl(100,40,20);
 $fine-print: rem-calc(14);
 
-/*body {
-     background-image: url(../img/background.png);
- }*/
 
 // _title-bar (created by afaque)
 
@@ -283,11 +280,12 @@ a.footer-links:hover {color:#525252;}
 .top-bar
 {
     background: none;
-    padding: 42px 0.9375rem 58px 0.9375rem;
+    padding: rem-calc(0 5 0 5);
+    margin: rem-cal(40 0);
     transition: all 0.5s ease 0.1s;
     // LOGO ADJUSTMENT
     ul.title-area img {
-        margin: -36px 0 0 0;
+        margin: rem-calc(5 0 0 0);
     }
 
     &.expanded {
@@ -302,27 +300,26 @@ a.footer-links:hover {color:#525252;}
         // MENU ITEM STYLES
         li a:not(.button), li.active a:not(.button) {
             background: none;
-            line-height: 30px;
-            padding: 0;
-            margin: 5px 0 0 0;
+            padding-top: rem-calc(22);
+            padding-bottom: rem-calc(20);
             text-transform: uppercase;
         }
         // MENU ITEM HOVERS
         li a:not(.button):hover {
             background: none;
-            border-bottom: 2px solid $primary-color;
+            border-bottom: rem-calc(3) solid $primary-color;
             color: #222;
         }
         // MENU ITEM ACTIVE
         li.active a:not(.button) {
-            border-bottom: 2px solid $primary-color;
+            border-bottom: rem-calc(3) solid $primary-color;
             color: #222;
             &:hover {
                 background: none;
             }
         }
         li {
-            margin-left: 30px;
+            margin-left: rem-calc(0);
             a {
                 color: #888;
             }
@@ -366,9 +363,16 @@ a.footer-links:hover {color:#525252;}
 
 // USED FOR JQUERY ACTION
 .padding-on-my-header {
-    padding: 5px 0.9375rem 30px 0.9375rem;
+    padding: rem-calc(0 15 0 35);
     ul.title-area img {
-        margin: 0 0 0 0;
+    
+    }
+    .top-bar-section ul {
+        li a:not(.button), li.active a:not(.button) {
+            background: none;
+            padding-top: rem-calc(0);
+            padding-bottom: rem-calc(0);
+        }
     }
 }
 
