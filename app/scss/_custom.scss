@@ -265,7 +265,7 @@ a.footer-links:hover {color:#525252;}
 // FILL USED FOR HEADER
 .header-fill {
     background: #fff;
-    height: 100px;
+    height: rem-calc(55);
     .tablet-mobile-logo img {
         padding-top: 30px;
     }
@@ -275,107 +275,140 @@ a.footer-links:hover {color:#525252;}
     min-width: 100%;
 }
 
-/*   TOPBAR NAVGATION
-   ========================================================================== */
 .top-bar
-{
-    background: none;
-    padding: rem-calc(0 5 0 5);
-    margin: rem-cal(40 0);
-    transition: all 0.5s ease 0.1s;
-    // LOGO ADJUSTMENT
-    ul.title-area img {
-        margin: rem-calc(5 0 0 0);
-    }
-
-    &.expanded {
-        height: auto;
-        background: transparent;
-
-        .title-area { background: none; }
-    }
-
-    .top-bar-section ul {
+    {
         background: none;
-        // MENU ITEM STYLES
-        li a:not(.button), li.active a:not(.button) {
-            background: none;
-            padding-top: rem-calc(22);
-            padding-bottom: rem-calc(20);
-            text-transform: uppercase;
+        padding: rem-calc(0 0 0 5);
+        margin: rem-cal(40 0);
+        transition: all 0.5s ease 0.1s;
+        // LOGO ADJUSTMENT
+        ul.title-area img {
+            width: rem-calc(140);
+            height: rem-calc(50);
+            margin: rem-calc(3 0 0 0);
         }
-        // MENU ITEM HOVERS
-        li a:not(.button):hover {
-            background: none;
-            border-bottom: rem-calc(3) solid $primary-color;
-            color: #222;
-        }
-        // MENU ITEM ACTIVE
-        li.active a:not(.button) {
-            border-bottom: rem-calc(3) solid $primary-color;
-            color: #222;
-            &:hover {
-                background: none;
-            }
-        }
-        li {
-            margin-left: rem-calc(0);
-            a {
-                color: #888;
-            }
-        }
-    }
-    // DROPDOWN MENU
-    .top-bar-section ul li:hover:not(.has-form) > a {
-        color: #333;
-    }
-    .top-bar-section li ul.dropdown {
-        background: $topbar-bg-color;
-        border: 1px solid #ddd;
-        color: #888;
+        &.expanded {
+            height: auto;
+            background: transparent;
 
-        .expanded {
-            background: none;
-        }
-
-        li {
-            border-bottom: 1px solid #ddd;
-            margin: 0;
-            padding: 5px 15px 5px 15px;
+            .title-area { background: none; }
         }
     }
-    .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar-section li ul.dropdown li a:not(.button) {
-        background: none;
-        color: #222;
-        border-bottom: none;
-        padding: 20px -4px 40px 45px;
-    }
-    .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
-        background: none;
-        color: #222;
-    }
-    // DROPDOWN ARROW
-    .has-dropdown > a:after {
-        border-color: rgba(0, 0, 0, 0.5) transparent transparent;
-        margin-top: -5px;
-    }
-}
 
 // USED FOR JQUERY ACTION
-.padding-on-my-header {
-    padding: rem-calc(0 15 0 35);
-    ul.title-area img {
-    
+    .padding-on-my-header {
+        padding: rem-calc(0 5 0 15);
     }
-    .top-bar-section ul {
-        li a:not(.button), li.active a:not(.button) {
+
+/*   TOPBAR NAVGATION
+   ========================================================================== */
+@media #{$large-up} { 
+    .header-fill{
+        height: rem-calc(100);
+    }
+
+    .top-bar
+    {
+        background: none;
+        padding: rem-calc(0 5 0 5);
+        margin: rem-cal(40 0);
+        transition: all 0.5s ease 0.1s;
+        // LOGO ADJUSTMENT
+        ul.title-area img {
+            width: rem-calc(266);
+            height: rem-calc(95);
+            margin: rem-calc(3 0 0 0);
+        }
+
+        &.expanded {
+            height: auto;
+            background: transparent;
+
+            .title-area { background: none; }
+        }
+
+        .top-bar-section ul {
             background: none;
-            padding-top: rem-calc(0);
-            padding-bottom: rem-calc(0);
+            // MENU ITEM STYLES
+            li a:not(.button), li.active a:not(.button) {
+                background: none;
+                padding-top: rem-calc(22);
+                padding-bottom: rem-calc(20);
+                text-transform: uppercase;
+            }
+            // MENU ITEM HOVERS
+            li a:not(.button):hover {
+                background: none;
+                border-bottom: rem-calc(3) solid $primary-color;
+                color: #222;
+            }
+            // MENU ITEM ACTIVE
+            li.active a:not(.button) {
+                border-bottom: rem-calc(3) solid $primary-color;
+                color: #222;
+                &:hover {
+                    background: none;
+                }
+            }
+            li {
+                margin-left: rem-calc(20);
+            }
+        }
+        // DROPDOWN MENU
+        .top-bar-section ul li:hover:not(.has-form) > a {
+            color: #333;
+        }
+        .top-bar-section li ul.dropdown {
+            background: $topbar-bg-color;
+            border: 1px solid #ddd;
+            color: #888;
+
+            .expanded {
+                background: none;
+            }
+
+            li {
+                border-bottom: 1px solid #ddd;
+                margin: 0;
+                padding: 5px 15px 5px 15px;
+            }
+        }
+        .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar-section li ul.dropdown li a:not(.button) {
+            background: none;
+            color: #222;
+            border-bottom: none;
+            padding: 20px -4px 40px 45px;
+        }
+        .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
+            background: none;
+            color: #222;
+        }
+        .has-dropdown{
+            & > a{
+                &:after {
+                    top: 50%;
+                }
+            }
+        }
+    }
+
+    // USED FOR JQUERY ACTION
+    .padding-on-my-header {
+        padding: rem-calc(0 15 0 35);
+        ul.title-area img {
+            width: rem-calc(140);
+            height: rem-calc(50);
+            margin: rem-calc(5 0 0 0);
+        }
+        .top-bar-section ul {
+            li a:not(.button), li.active a:not(.button) {
+                background: none;
+                padding-top: rem-calc(0);
+                padding-bottom: rem-calc(0);
+            }
         }
     }
 }
-
 
 
 
