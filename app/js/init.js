@@ -4,16 +4,12 @@ jQuery(document).ready(function($){
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
 
-		if (scroll >= 50) {
+		if (scroll >= 300) {
 			$(".important-class").addClass("padding-on-my-header");
 		}
-		if (scroll < 50) {
+		if (scroll < 300) {
 			$(".important-class").removeClass("padding-on-my-header");
 		}
 	});
-
-	$('.top-bar ul.right li').click(function() {
-       $('.top-bar').removeClass('expanded');
-    });
 });
 
