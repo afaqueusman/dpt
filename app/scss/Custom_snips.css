@@ -1,6 +1,61 @@
+/* Custom SCSS snips for use if required
+
+
+/*   TITLE BAR (TOP BAR DIVIDED IN TWO ROWS)
+   ========================================================================== */
+
+$titlebar-height: rem-calc(42);
+$titlebar-bg: hsl(100,40,20);
+
+.title-bar {
+    height: $titlebar-height;
+    line-height: $titlebar-height;
+    background: $titlebar-bg;
+
+    ul {
+      height: auto;
+      display: block;
+      background: $titlebar-bg;
+      font-size: $rem-base;
+      margin: 0;
+    }
+
+    .name {
+      height: $titlebar-height;
+      margin: 0;
+      font-size: $rem-base;
+    }
+
+    a {
+        color: $topbar-link-color;
+        text-transform: $topbar-menu-link-transform;
+        font-size: $topbar-menu-link-font-size;
+        font-weight: $topbar-menu-link-weight;
+        position: relative;
+        display: block;
+        padding: 0 $titlebar-height / 3;
+        height: $titlebar-height;
+        line-height: $titlebar-height;
+    }
+
+    ul li {
+      & > a {
+        display: block;
+        width: 100%;
+        color: $topbar-link-color;
+        padding: 0;
+        padding-#{$default-float}: $titlebar-height / 3;
+        font-size: $topbar-link-font-size;
+        font-weight: $topbar-link-weight;
+        background: $titlebar-bg;
+        }
+    }
+}
+
 
 /*   TOPBAR NAVGATION
    ========================================================================== */
+
 .top-bar
 {
     background: none;
