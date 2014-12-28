@@ -3,254 +3,21 @@
 
 // Variables
 
-$titlebar-height: rem-calc(42);
-$titlebar-bg: hsl(100,40,20);
 $fine-print: rem-calc(14);
 
 
-// _title-bar (created by afaque)
-
-.title-bar {
-    height: $titlebar-height;
-    line-height: $titlebar-height;
-    background: $titlebar-bg;
-
-    ul {
-      height: auto;
-      display: block;
-      background: $titlebar-bg;
-      font-size: $rem-base;
-      margin: 0;
-    }
-
-    .name {
-      height: $titlebar-height;
-      margin: 0;
-      font-size: $rem-base;
-    }
-
-    a {
-        color: $topbar-link-color;
-        text-transform: $topbar-menu-link-transform;
-        font-size: $topbar-menu-link-font-size;
-        font-weight: $topbar-menu-link-weight;
-        position: relative;
-        display: block;
-        padding: 0 $titlebar-height / 3;
-        height: $titlebar-height;
-        line-height: $titlebar-height;
-    }
-
-    ul li {
-      & > a {
-        display: block;
-        width: 100%;
-        color: $topbar-link-color;
-        padding: 0;
-        padding-#{$default-float}: $titlebar-height / 3;
-        font-size: $topbar-link-font-size;
-        font-weight: $topbar-link-weight;
-        background: $titlebar-bg;
-    	}
-    }
-}
-
-.background1 {
-    background: green;
-}
-
-.background2 {
-    margin:0px;
-    padding:0px;
-    height: rem-calc(600);
-    background: #80628b;
-}
-
-.background5 {
-    background: #cf4858;
-    padding: rem-calc(100 20);
-    div{
-        .panel{
-            margin-bottom: rem-calc(0);
-            background: $white;
-            box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
-            padding: rem-calc(100 50); 
-            p{ 
-                padding: rem-calc(0 70);
-                
-            }
-        }
-    }
-    /*.small-12{
-        .panel{
-            p{
-                padding: rem-calc(0 30);
-            }
-        }
-    }*/
-}
-
-.background3 {
-    background: #069FC5;
-    padding: rem-calc(100 20);
-    div{
-        .panel{
-            margin-bottom: rem-calc(0);
-            background: $white;
-            box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
-            padding: rem-calc(100 50); 
-            p{ 
-                padding: rem-calc(0 70);
-                
-            }
-        }
-    }
-    /*.small-12{
-        .panel{
-            p{
-                padding: rem-calc(0 30);
-            }
-        }
-    }*/
-}
-
-.background4 {
-    background: white;
-}
-
-.involve {
-    height : rem-calc(350);
-    background : #F4AC42 url('../img/footer-background-1.png') no-repeat center;
-    padding : rem-calc(50);
-    z-index: inherit;
-    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.5);
-    }
-
-.inner-wrap{
-    z-index: 20;
-}
-
-.clearfooter{
-    margin-bottom: rem-calc(320);
-}
-
-
-/*              FOOTER OVERRIDES
-   ========================================================================== */
-
-footer{
- 	color: #fff;
-    display: block;
-	background: #0e6e8c;
-    position: fixed;
-    text-align: center;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: -5;
-    padding-top: rem-calc(15);
-
-    .row{
-        padding: rem-calc(25 0 15);
-        ul{
-            list-style-type: none;
-            padding: rem-calc(0);
-            margin: rem-calc(0);
-        }
-    }
-
-
-    .copyrights {
-        background : #063e53;
-        color : $white;
-        h6 {
-            font-size: $fine-print;
-        }
-    }
-
-}
-
-.progress{
-    .bottom{
-        display: block;
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        z-index: 99;
-    }
-}
-
-a.footer-img
-{
-    padding:0px 0px;
-}
-
-
-a.footer-links:active {color:#0F0F0F;}
-a.footer-links:link {color:#0F0F0F;}
-a.footer-links:visited {color:#0F0F0F;}
-a.footer-links:hover {color:#525252;}
-
-
-
-
-
-
-/*       FOOTER OVERRIDES END HERE
-   ========================================================================== */
-
-
-
-
-
-
-
-
-//.columns {border: 1px solid red;}
-
-//For contact.html
-#map-canvas{
-    height: 450px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px
-}
-
-
-.orbit-container{
-    .orbit-slides-container{
-        img{
-            display: inline-block;
-        }
-    }
-} 
-
-.banner{
-    text-align: center;
-}
-
-.jq_button { 
-    @include button(rem-calc(5), darken($primary-color, 5%), true, false, false, false);
-    border: 1.5px solid lighten($primary-color, 10%);
-    font-size: rem-calc(12);
-    }
-
-.panel_button { 
-    @include button(rem-calc(5), darken($primary-color, 5%), true, true, false, false);
-    border: 1.5px solid lighten($primary-color, 10%);
-    font-size: rem-calc(12);
-    }
-
-.accordion  {
-    .accordion-navigation  {
-    border: 1.5px solid darken($primary-color, 5%);
-  }
-}
-
-
-
 // --------------------------------------------------------------------------------------------------------------
+.columns {border: 1px solid red;}
+// --------------------------------------------------------------------------------------------------------------
+
+/* Global
+   ========================================================================== */
+
+h1, h2, h3 {
+    font-weight: 300;
+}
+
+
 
 /*   HEADER SECTION
    ========================================================================== */
@@ -300,8 +67,8 @@ a.footer-links:hover {color:#525252;}
         padding: rem-calc(0 5 0 15);
     }
 
-/*   TOPBAR NAVGATION
-   ========================================================================== */
+// FOR LARGE SCREEN
+
 @media #{$large-up} { 
     .header-fill{
         height: rem-calc(100);
@@ -312,6 +79,7 @@ a.footer-links:hover {color:#525252;}
         background: none;
         padding: rem-calc(0 5 0 5);
         margin: rem-cal(40 0);
+        font-weight: bold;
         transition: all 0.5s ease 0.1s;
         // LOGO ADJUSTMENT
         ul.title-area img {
@@ -409,6 +177,208 @@ a.footer-links:hover {color:#525252;}
         }
     }
 }
+
+
+/*   HEADER SECTION
+   ========================================================================== */
+
+
+.background1 {
+    background: green;
+}
+
+.background2 {
+    margin:0px;
+    padding:0px;
+    height: rem-calc(600);
+    background: #80628b;
+}
+
+.background5 {
+    background: #cf4858;
+    padding: rem-calc(100 20);
+    div{
+        .panel{
+            margin-bottom: rem-calc(0);
+            background: $white;
+            box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
+            padding: rem-calc(100 50); 
+            p{ 
+                padding: rem-calc(0 70);
+                
+            }
+        }
+    }
+    /*.small-12{
+        .panel{
+            p{
+                padding: rem-calc(0 30);
+            }
+        }
+    }*/
+}
+
+.background3 {
+    background: #069FC5;
+    padding: rem-calc(100 20);
+    div{
+        .panel{
+            margin-bottom: rem-calc(0);
+            background: $white;
+            box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
+            padding: rem-calc(100 50); 
+            p{ 
+                padding: rem-calc(0 70);
+                
+            }
+        }
+    }
+    /*.small-12{
+        .panel{
+            p{
+                padding: rem-calc(0 30);
+            }
+        }
+    }*/
+}
+
+.background4 {
+    background: white;
+}
+
+.involve {
+    height : rem-calc(300);
+    background : #F4AC42 url('../img/footer-background-1.png') no-repeat center;
+    padding : rem-calc(50);
+    z-index: inherit;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.5);
+    }
+
+.inner-wrap{
+    z-index: 20;
+}
+
+.clearfooter{
+    margin-bottom: rem-calc(320);
+}
+
+
+/*              FOOTER OVERRIDES
+   ========================================================================== */
+
+footer{
+ 	color: #fff;
+    display: block;
+	background: #0e6e8c;
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -5;
+    padding-top: rem-calc(15);
+
+    .row{
+        padding: rem-calc(25 0 15);
+        ul{
+            list-style-type: none;
+            padding: rem-calc(0);
+            margin: rem-calc(0);
+        }
+    }
+
+
+    .copyrights {
+        background : #063e53;
+        color : $white;
+        h6 {
+            font-size: $fine-print;
+        }
+    }
+
+}
+
+.progress{
+    .bottom{
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 99;
+    }
+}
+
+a.footer-img
+{
+    padding:0px 0px;
+}
+
+
+a.footer-links:active {color:#0F0F0F;}
+a.footer-links:link {color:#0F0F0F;}
+a.footer-links:visited {color:#0F0F0F;}
+a.footer-links:hover {color:#525252;}
+
+
+
+
+
+
+/*       FOOTER OVERRIDES END HERE
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+//For contact.html
+#map-canvas{
+    height: 450px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+
+.orbit-container{
+    .orbit-slides-container{
+        img{
+            display: inline-block;
+        }
+    }
+} 
+
+.banner{
+    text-align: center;
+}
+
+.jq_button { 
+    @include button(rem-calc(5), darken($primary-color, 5%), true, false, false, false);
+    border: 1.5px solid lighten($primary-color, 10%);
+    font-size: rem-calc(12);
+    }
+
+.panel_button { 
+    @include button(rem-calc(5), darken($primary-color, 5%), true, true, false, false);
+    border: 1.5px solid lighten($primary-color, 10%);
+    font-size: rem-calc(12);
+    }
+
+.accordion  {
+    .accordion-navigation  {
+    border: 1.5px solid darken($primary-color, 5%);
+  }
+}
+
+
+
+
 
 
 
