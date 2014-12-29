@@ -178,20 +178,69 @@ h1, h2, h3 {
     }
 }
 
+/* ========================================================================== */
 
-/*   HEADER SECTION
+
+/*  INDEX-BODY
    ========================================================================== */
 
+.hero {
+    background: white;
+
+    .example-orbit-content{
+        li{
+
+            .slide-1{
+                height: rem-calc(600);
+                color: white;
+                background: blue url('../img/featured-1.jpg') no-repeat center;
+            }
+
+            .slide-2{
+                height: rem-calc(600);
+                color: white;
+                background: yellow url('../img/featured-2.jpg') no-repeat center;
+            }
+
+            .slide-3{
+                height: rem-calc(600);
+                color: white;
+                background: red url('../img/featured-3.jpg') no-repeat center;
+            }
+
+            .slide-4{
+                height: rem-calc(600);
+                color: white;
+                background: green url('../img/featured-4.jpg') no-repeat center;
+            }
+
+            .slide-5{
+                height: rem-calc(600);
+                color: white;
+                background: grey url('../img/featured-5.jpg') no-repeat center;
+            }
+
+            div{
+                h2, h5 {
+                    color: white;
+                }
+            }
+        }       
+    }
+}
 
 .background1 {
     background: white;
     padding: rem-calc(60 0 30 0);
+
     .columns {
         padding: rem-calc(10 60);
     }
+
     h5{
         text-transform: uppercase;
     }
+
     .icon-1 {
         height: rem-calc(200);
         padding: rem-calc(10);
@@ -261,7 +310,6 @@ h1, h2, h3 {
 }
 
 .involve {
-    height : rem-calc(300);
     background : #F4AC42 url('../img/footer-background-1.png') no-repeat center;
     padding : rem-calc(40);
     z-index: inherit;
@@ -273,7 +321,7 @@ h1, h2, h3 {
         }
         p {
             margin: rem-calc(15);
-            padding: rem-calc(0 0 30 0);
+            padding: rem-calc(0 100 30 100);
         }
         .button {
             font-size: rem-calc(18);
@@ -294,9 +342,9 @@ h1, h2, h3 {
    ========================================================================== */
 
 footer{
- 	color: #fff;
+    color: #fff;
     display: block;
-	background: #0e6e8c;
+    background: #0e6e8c;
     position: fixed;
     text-align: center;
     bottom: 0px;
