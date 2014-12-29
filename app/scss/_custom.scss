@@ -189,6 +189,15 @@ h1, h2, h3 {
     .columns {
         padding: rem-calc(10 60);
     }
+    h5{
+        text-transform: uppercase;
+    }
+    .icon-1 {
+        height: rem-calc(200);
+        padding: rem-calc(10);
+        background: url('../img/engineering.svg') no-repeat center;
+        border-bottom: 2px solid #e0e9c4;
+    }
 }
 
 .background2 {
