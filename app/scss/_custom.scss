@@ -119,7 +119,7 @@ h1, h2, h3 {
                 }
             }
             li {
-                margin-left: rem-calc(20);
+                margin-left: rem-calc(5);
             }
         }
         // DROPDOWN MENU
@@ -193,29 +193,29 @@ h1, h2, h3 {
             .slide-1{
                 height: rem-calc(600);
                 color: white;
-                background: blue url('../img/featured-1.jpg') no-repeat center;
+                background: #ffcccc url('../img/hny-1.png') no-repeat center;
             }
 
             .slide-2{
-                height: rem-calc(600);
+                height: rem-calc(500);
                 color: white;
                 background: yellow url('../img/featured-2.jpg') no-repeat center;
             }
 
             .slide-3{
-                height: rem-calc(600);
+                height: rem-calc(500);
                 color: white;
                 background: red url('../img/featured-3.jpg') no-repeat center;
             }
 
             .slide-4{
-                height: rem-calc(600);
+                height: rem-calc(500);
                 color: white;
                 background: green url('../img/featured-4.jpg') no-repeat center;
             }
 
             .slide-5{
-                height: rem-calc(600);
+                height: rem-calc(500);
                 color: white;
                 background: gray url('../img/featured-5.jpg') no-repeat center;
             }
@@ -405,7 +405,7 @@ footer{
         img{
             width: rem-calc(60);
             height: rem-calc(60);
-            background: rgb(83, 176, 57);gfh
+            background: rgb(83, 176, 57);
             border-radius: rem-calc(30);
         }
     }
@@ -1162,7 +1162,7 @@ a.footer-links:hover {color:#525252;}
  }
 }
 
---------------------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------
 
 .background-5{
     .flip-container {
