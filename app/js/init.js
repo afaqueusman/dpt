@@ -1,5 +1,4 @@
 jQuery(document).ready(function($){
-	var smallWindow = false;
 
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
