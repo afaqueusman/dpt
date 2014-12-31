@@ -528,24 +528,6 @@ a.footer-links:hover {color:#525252;}
 
 
 
-// For Terms and Privacy
-.paraHeader
-{
-    text-decoration : underline;
-    font-size: rem-calc(18px);
-}
-
-
-
-
-//For contact.html
-#map-canvas{
-    height: 450px;
-    width: 100%;
-    margin: 0px;
-    padding: 0px
-}
-
 
 .orbit-container{
     .orbit-slides-container{
@@ -1361,4 +1343,25 @@ a.footer-links:hover {color:#525252;}
   font-family: arial;
   line-height: 2em;
 }
+}
+
+
+
+
+// For Terms and Privacy
+.paraHeader
+{
+    text-decoration : underline;
+    font-size: rem-calc(18px);
+}
+
+
+
+
+//For contact.html
+#map-canvas{
+    height: 450px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px
 }
