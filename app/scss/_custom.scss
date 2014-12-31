@@ -199,25 +199,13 @@ h1, h2, h3 {
             .slide-2{
                 height: rem-calc(500);
                 color: white;
-                background: yellow url('../img/featured-2.jpg') no-repeat center;
+                background: #ccccff url('../img/featured-2.jpg') no-repeat center;
             }
 
             .slide-3{
                 height: rem-calc(500);
                 color: white;
-                background: red url('../img/featured-3.jpg') no-repeat center;
-            }
-
-            .slide-4{
-                height: rem-calc(500);
-                color: white;
-                background: green url('../img/featured-4.jpg') no-repeat center;
-            }
-
-            .slide-5{
-                height: rem-calc(500);
-                color: white;
-                background: gray url('../img/featured-5.jpg') no-repeat center;
+                background: #ccffcc url('../img/featured-3.jpg') no-repeat center;
             }
 
             div{
@@ -314,6 +302,27 @@ h1, h2, h3 {
                 padding: rem-calc(0 70);
                 
             }
+
+            .icon-1 {
+                height: rem-calc(200);
+                padding: rem-calc(10);
+                background: url('../img/research.svg') no-repeat center;
+                border-bottom: 2px solid #e0e9c4;
+            }
+
+            .icon-2 {
+                height: rem-calc(200);
+                padding: rem-calc(10);
+                background: url('../img/design.svg') no-repeat center;
+                border-bottom: 2px solid #e0e9c4;
+            }
+
+            .icon-3 {
+                height: rem-calc(200);
+                padding: rem-calc(10);
+                background: url('../img/engineering.svg') no-repeat center;
+                border-bottom: 2px solid #e0e9c4;
+            }
         }
     }
     /*.small-12{
@@ -368,7 +377,7 @@ h1, h2, h3 {
 
 .involve {
     background : #F4AC42 url('../img/footer-background-1.png') no-repeat center;
-    padding : rem-calc(40);
+    padding : rem-calc(30);
     z-index: inherit;
     box-shadow: 0 3px 10px -2px rgba(0,0,0,0.5);
 
@@ -378,7 +387,7 @@ h1, h2, h3 {
         }
         p {
             margin: rem-calc(15);
-            padding: rem-calc(0 100 30 100);
+            padding: rem-calc(0 100 8 100);
         }
         .button {
             font-size: rem-calc(18);
