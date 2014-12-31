@@ -193,13 +193,13 @@ h1, h2, h3 {
             .slide-1{
                 height: rem-calc(500);
                 color: white;
-                background: #ffcccc url('../img/hny-1.png') no-repeat center;
+                background: #ccccff url('../img/hny-1.png') no-repeat center;
             }
 
             .slide-2{
                 height: rem-calc(500);
                 color: white;
-                background: #ccccff url('../img/featured-2.jpg') no-repeat center;
+                background: #ffcccc url('../img/featured-2.jpg') no-repeat center;
             }
 
             .slide-3{
@@ -208,8 +208,14 @@ h1, h2, h3 {
                 background: #ccffcc url('../img/featured-3.jpg') no-repeat center;
             }
 
+            .large-6{
+                margin-top: rem-calc(150);
+                background: rgba(0, 0, 0, 0.3);
+            }
+
             div{
                 h2, h5 {
+                    text-shadow: 0px 0px 10px #FF0000;
                     color: white;
                 }
             }
@@ -219,7 +225,7 @@ h1, h2, h3 {
 
 .background1 {
     background: white;
-    padding: rem-calc(60 0 30 0);
+    padding: rem-calc(0 0 30 0);
 
     .columns {
         padding: rem-calc(10 60);
@@ -265,30 +271,6 @@ h1, h2, h3 {
     background: #80628b;
 }
 
-.background5 {
-    background: #cf4858;
-    padding: rem-calc(100 20);
-    div{
-        .panel{
-            margin-bottom: rem-calc(0);
-            background: $white;
-            box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
-            padding: rem-calc(100 50); 
-            p{ 
-                padding: rem-calc(0 70);
-                
-            }
-        }
-    }
-    /*.small-12{
-        .panel{
-            p{
-                padding: rem-calc(0 30);
-            }
-        }
-    }*/
-}
-
 .background3 {
     background: #069FC5;
     padding: rem-calc(100 20);
@@ -306,32 +288,25 @@ h1, h2, h3 {
             .icon-1 {
                 height: rem-calc(200);
                 padding: rem-calc(10);
-                background: url('../img/research.svg') no-repeat center;
+                background: url('../img/custom_why.png') no-repeat center;
                 border-bottom: 2px solid #e0e9c4;
             }
 
             .icon-2 {
                 height: rem-calc(200);
                 padding: rem-calc(10);
-                background: url('../img/design.svg') no-repeat center;
+                background: url('../img/custom_what.png') no-repeat center;
                 border-bottom: 2px solid #e0e9c4;
             }
 
             .icon-3 {
                 height: rem-calc(200);
                 padding: rem-calc(10);
-                background: url('../img/engineering.svg') no-repeat center;
+                background: url('../img/custom_how.png') no-repeat center;
                 border-bottom: 2px solid #e0e9c4;
             }
         }
     }
-    /*.small-12{
-        .panel{
-            p{
-                padding: rem-calc(0 30);
-            }
-        }
-    }*/
 }
 
 .background4 {
@@ -373,6 +348,32 @@ h1, h2, h3 {
         background: url('../img/development.svg') no-repeat center;
         border-bottom: 2px solid #e0e9c4;
     }
+}
+
+.background5 {
+    background: #cf4858;
+    padding: rem-calc(100 20);
+    div{
+        .panel{
+            margin-bottom: rem-calc(0);
+            background: $white;
+            box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
+            padding: rem-calc(50); 
+            p{ 
+                padding: rem-calc(0 70);
+                
+            }
+        }
+    }
+}
+
+.background6{
+    background: white;
+    padding: rem-calc(30 0);
+    img{
+        width: rem-calc(900);
+    }
+
 }
 
 .involve {
