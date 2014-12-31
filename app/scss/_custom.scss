@@ -215,7 +215,7 @@ h1, h2, h3 {
 
             div{
                 h2, h5 {
-                    text-shadow: 0px 0px 10px #FF0000;
+                    text-shadow: 0px 0px 20px #000;
                     color: white;
                 }
             }
@@ -236,28 +236,28 @@ h1, h2, h3 {
     }
 
     .icon-1 {
-        height: rem-calc(200);
+        height: rem-calc(160);
         padding: rem-calc(10);
         background: url('../img/research.svg') no-repeat center;
         border-bottom: 2px solid #e0e9c4;
     }
 
     .icon-2 {
-        height: rem-calc(200);
+        height: rem-calc(160);
         padding: rem-calc(10);
         background: url('../img/design.svg') no-repeat center;
         border-bottom: 2px solid #e0e9c4;
     }
 
     .icon-3 {
-        height: rem-calc(200);
+        height: rem-calc(160);
         padding: rem-calc(10);
         background: url('../img/engineering.svg') no-repeat center;
         border-bottom: 2px solid #e0e9c4;
     }
 
     .icon-4 {
-        height: rem-calc(200);
+        height: rem-calc(160);
         padding: rem-calc(10);
         background: url('../img/development.svg') no-repeat center;
         border-bottom: 2px solid #e0e9c4;
@@ -272,44 +272,6 @@ h1, h2, h3 {
 }
 
 .background3 {
-    background: #069FC5;
-    padding: rem-calc(100 20);
-    div{
-        .panel{
-            margin-bottom: rem-calc(0);
-            background: $white;
-            box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
-            padding: rem-calc(100 50); 
-            p{ 
-                padding: rem-calc(0 70);
-                
-            }
-
-            .icon-1 {
-                height: rem-calc(200);
-                padding: rem-calc(10);
-                background: url('../img/custom_why.png') no-repeat center;
-                border-bottom: 2px solid #e0e9c4;
-            }
-
-            .icon-2 {
-                height: rem-calc(200);
-                padding: rem-calc(10);
-                background: url('../img/custom_what.png') no-repeat center;
-                border-bottom: 2px solid #e0e9c4;
-            }
-
-            .icon-3 {
-                height: rem-calc(200);
-                padding: rem-calc(10);
-                background: url('../img/custom_how.png') no-repeat center;
-                border-bottom: 2px solid #e0e9c4;
-            }
-        }
-    }
-}
-
-.background4 {
     background: white;
     padding: rem-calc(30 0);
 
@@ -350,7 +312,7 @@ h1, h2, h3 {
     }
 }
 
-.background5 {
+.background4 {
     background: #cf4858;
     padding: rem-calc(100 20);
     div{
@@ -367,7 +329,79 @@ h1, h2, h3 {
     }
 }
 
+.background5 {
+    background: white;
+    padding: rem-calc(30 0);
+
+    .columns {
+        padding: rem-calc(5 60);
+    }
+
+    h5{
+        text-transform: uppercase;
+    }
+
+    .icon-1 {
+        height: rem-calc(170);
+        padding: rem-calc(10);
+        background: url('../img/web-blog.png') no-repeat center;
+    }
+
+    .icon-2 {
+        height: rem-calc(170);
+        padding: rem-calc(10);
+        background: url('../img/testing.png') no-repeat center;
+    }
+
+    .icon-3 {
+        height: rem-calc(170);
+        padding: rem-calc(10);
+        background: url('../img/hosting.png') no-repeat center;
+    }
+
+    .icon-4 {
+        height: rem-calc(170);
+        padding: rem-calc(10);
+        background: url('../img/consult.png') no-repeat center;
+    }
+}
+
 .background6{
+    background: #069FC5;
+    padding: rem-calc(100 20);
+    div{
+        .panel{
+            margin-bottom: rem-calc(0);
+            background: $white;
+            box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
+            padding: rem-calc(50); 
+            p{ 
+                padding: rem-calc(0 70);
+                
+            }
+
+            .icon-1 {
+                height: rem-calc(100);
+                padding: rem-calc(10);
+                background: url('../img/custom_why.png') no-repeat center;
+            }
+
+            .icon-2 {
+                height: rem-calc(100);
+                padding: rem-calc(10);
+                background: url('../img/custom_what.png') no-repeat center;
+            }
+
+            .icon-3 {
+                height: rem-calc(100);
+                padding: rem-calc(10);
+                background: url('../img/custom_how.png') no-repeat center;
+            }
+        }
+    }
+}
+
+.background7{
     background: white;
     padding: rem-calc(30 0);
     img{
