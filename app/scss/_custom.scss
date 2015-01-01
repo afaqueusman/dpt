@@ -7,7 +7,7 @@ $fine-print: rem-calc(14);
 
 
 // --------------------------------------------------------------------------------------------------------------
-.columns {border: 1px solid red;}
+//.columns {border: 1px solid red;}
 // --------------------------------------------------------------------------------------------------------------
 
 /* Global
@@ -239,28 +239,28 @@ h1, h2, h3 {
         height: rem-calc(160);
         padding: rem-calc(10);
         background: url('../img/research.svg') no-repeat center;
-        border-bottom: 2px solid #e0e9c4;
+        border-bottom: 2px solid #E25025;
     }
 
     .icon-2 {
         height: rem-calc(160);
         padding: rem-calc(10);
         background: url('../img/design.svg') no-repeat center;
-        border-bottom: 2px solid #e0e9c4;
+        border-bottom: 2px solid #E25025;
     }
 
     .icon-3 {
         height: rem-calc(160);
         padding: rem-calc(10);
         background: url('../img/engineering.svg') no-repeat center;
-        border-bottom: 2px solid #e0e9c4;
+        border-bottom: 2px solid #E25025;
     }
 
     .icon-4 {
         height: rem-calc(160);
         padding: rem-calc(10);
         background: url('../img/development.svg') no-repeat center;
-        border-bottom: 2px solid #e0e9c4;
+        border-bottom: 2px solid #E25025;
     }
 }
 
@@ -268,6 +268,10 @@ h1, h2, h3 {
     background: #80628b;
     padding: rem-calc(50 0 0 0);
     text-shadow: 0px 0px 10px #fff;
+    .product{
+        height: rem-calc(250);
+        background: url('../img/product_design.jpg') no-repeat center;
+    }
 
     .gears {
         margin: rem-calc(-50 0 -80 0);
@@ -279,39 +283,35 @@ h1, h2, h3 {
     padding: rem-calc(30 0);
 
     .columns {
-        padding: rem-calc(10 60);
-    }
-
-    h5{
-        text-transform: uppercase;
+        padding: rem-calc(10);
     }
 
     .icon-1 {
         height: rem-calc(200);
-        padding: rem-calc(10);
-        background: url('../img/research.svg') no-repeat center;
-        border-bottom: 2px solid #e0e9c4;
+        padding: rem-calc(5);
+        background: url('../img/ind_des.jpg') no-repeat center;
+        border: 2px solid #3698BB;
     }
 
     .icon-2 {
         height: rem-calc(200);
         padding: rem-calc(10);
-        background: url('../img/design.svg') no-repeat center;
-        border-bottom: 2px solid #e0e9c4;
+        background: url('../img/cad.jpg') no-repeat center;
+        border: 2px solid #3698BB;
     }
 
     .icon-3 {
         height: rem-calc(200);
         padding: rem-calc(10);
-        background: url('../img/engineering.svg') no-repeat center;
-        border-bottom: 2px solid #e0e9c4;
+        background: url('../img/cae.jpg') no-repeat center;
+        border: 2px solid #3698BB;
     }
 
     .icon-4 {
         height: rem-calc(200);
         padding: rem-calc(10);
-        background: url('../img/development.svg') no-repeat center;
-        border-bottom: 2px solid #e0e9c4;
+        background: url('../img/system.png') no-repeat center;
+        border: 2px solid #3698BB;
     }
 }
 
