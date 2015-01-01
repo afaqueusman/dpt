@@ -7,7 +7,7 @@ $fine-print: rem-calc(14);
 
 
 // --------------------------------------------------------------------------------------------------------------
-.columns {border: 1px solid red;}
+// .columns {border: 1px solid red;}
 // --------------------------------------------------------------------------------------------------------------
 
 /* Global
@@ -266,11 +266,11 @@ h1, h2, h3 {
 
 .background2 {
     background: #80628b;
-    padding: rem-calc(50 0);
-    height: rem-calc(400);
+    padding: rem-calc(50 0 0 0);
+    text-shadow: 0px 0px 10px #fff;
 
     .gears {
-        margin: rem-calc(-60 0 -80 0);
+        margin: rem-calc(-50 0 -80 0);
     }
 }
 
@@ -318,6 +318,7 @@ h1, h2, h3 {
 .background4 {
     background: #cf4858;
     padding: rem-calc(50 0);
+    text-shadow: 0px 0px 10px #fff;
 }
 
 .background5 {
@@ -366,7 +367,8 @@ h1, h2, h3 {
             background: $white;
             box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.2);
             padding: rem-calc(50); 
-            p{ 
+            
+            p:first-child{ 
                 padding: rem-calc(0 70);
                 
             }
@@ -406,6 +408,7 @@ h1, h2, h3 {
     padding : rem-calc(30);
     z-index: inherit;
     box-shadow: 0 3px 10px -2px rgba(0,0,0,0.5);
+    text-shadow: 0px 0px 10px #fff;
 
     .row{
         h2 {
@@ -453,10 +456,17 @@ footer{
 
     .row{
         padding: rem-calc(25 0 0 0);
+
         ul{
             list-style-type: none;
             padding: rem-calc(0);
             margin: rem-calc(0);
+        }
+
+        .columns{
+            img{
+                margin: rem-calc(0 15);
+            }
         }
     }
 
@@ -478,8 +488,9 @@ footer{
         img{
             width: rem-calc(60);
             height: rem-calc(60);
-            background: rgb(83, 176, 57);
+            background: #348632;
             border-radius: rem-calc(30);
+            border: 3px solid #348632;
         }
     }
 }
@@ -517,20 +528,6 @@ a.footer-links:hover {color:#525252;}
 
 
 
-
-
-
-.orbit-container{
-    .orbit-slides-container{
-        img{
-            display: inline-block;
-        }
-    }
-} 
-
-.banner{
-    text-align: center;
-}
 
 .jq_button { 
     @include button(rem-calc(5), darken($primary-color, 5%), true, false, false, false);
