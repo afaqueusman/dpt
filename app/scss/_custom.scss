@@ -10,7 +10,7 @@ $fine-print: rem-calc(14);
 //.columns {border: 1px solid red;}
 // --------------------------------------------------------------------------------------------------------------
 
-/* Global
+/*    GLOBAL
    ========================================================================== */
 
 h1, h2, h3 {
@@ -181,7 +181,7 @@ h1, h2, h3 {
 /* ========================================================================== */
 
 
-/*  INDEX-BODY
+/*      INDEX-BODY
    ========================================================================== */
 
 .hero {
@@ -422,7 +422,7 @@ h1, h2, h3 {
             font-size: rem-calc(18);
         }
     }
-    }
+}
 
 .inner-wrap{
     z-index: 20;
@@ -437,6 +437,25 @@ h1, h2, h3 {
         margin-bottom: rem-calc(292);
     }
 }
+
+/* ========================================================================== */
+
+/*       OTHER WEB PAGES OVERRIDES
+   ========================================================================== */
+
+.inner-wrap{
+    z-index: 20;
+}
+
+.pageContent{
+    background: #fff;
+}
+
+.mask{
+    height: rem-calc(152);
+}
+
+/* ========================================================================== */
 
 /*              FOOTER OVERRIDES
    ========================================================================== */
@@ -495,7 +514,6 @@ footer{
     }
 }
 
-
 .progress{
     .bottom{
         display: block;
@@ -507,54 +525,7 @@ footer{
     }
 }
 
-a.footer-img
-{
-    padding:0px 0px;
-}
-
-
-a.footer-links:active {color:#0F0F0F;}
-a.footer-links:link {color:#0F0F0F;}
-a.footer-links:visited {color:#0F0F0F;}
-a.footer-links:hover {color:#525252;}
-
-
-
-
-
-
-/*       FOOTER OVERRIDES END HERE
-   ========================================================================== */
-
-
-
-
-.jq_button { 
-    @include button(rem-calc(5), darken($primary-color, 5%), true, false, false, false);
-    border: 1.5px solid lighten($primary-color, 10%);
-    font-size: rem-calc(12);
-    }
-
-.panel_button { 
-    @include button(rem-calc(5), darken($primary-color, 5%), true, true, false, false);
-    border: 1.5px solid lighten($primary-color, 10%);
-    font-size: rem-calc(12);
-    }
-
-.accordion  {
-    .accordion-navigation  {
-    border: 1.5px solid darken($primary-color, 5%);
-  }
-}
-
-
-
-
-
-
-
-
-
+/* ========================================================================== */
 
 
 /*   GEAR MECHANISM
