@@ -103,6 +103,29 @@ module.exports = function(grunt) {
 			}
 		},
 
+		htmlmin: {
+			dist: {
+				options: {
+					removeComments: true,
+					collapseWhitespace: true,
+					collapseBooleanAttributes: true,
+					conservativeCollapse: true,
+					removeAttributesQuotes: true,
+					removeCommentsFromCDATA: true,
+					removeEmptyAttributes: true,
+					removeOptionalTags: true,
+					removeRedundantAttributes: true,
+					useShortDoctype: true
+				},
+				files: [{
+					expand: true,
+					cwd: 'dist/',
+					src: '**/*.html',
+					dest: 'dist/'
+				}]
+			}
+		},
+
 		watch: {
 			grunt: {
 				files: ['Gruntfile.js'],
@@ -170,6 +193,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
 	
-	grunt.registerTask('publish', ['compile-jade', 'compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
+	grunt.registerTask('publish', ['compile-jade', 'compile-sass', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin', 'htmlmin']);
 
 };
