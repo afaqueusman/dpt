@@ -18,6 +18,7 @@ vault
 app/bower_components
 app/css
 dist
+*.html
 
 *.sublime-*
 *.tmp
